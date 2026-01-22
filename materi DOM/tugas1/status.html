@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="status">STATUS AWAL</p>
+    <p id="data">
+        Haikal <br>
+        Rasya <br>
+        Bisma <br>
+    </p>
+
+    <button onclick="aktif()">Aktifkan</button>
+    <button onclick="nonaktif()">Nonaktifkan</button>
+
+    <script>
+        
+        function aktif() {
+            document.getElementById("status").innerHTML = "Status Aktif"
+            document.getElementById("status").style.color = "green"
+            document.getElementById("data").style.display = "block"
+        }
+        function nonaktif() {
+            document.getElementById("status").innerHTML = "Status Nonaktif"
+            document.getElementById("status").style.color = "red"
+            document.getElementById("data").style.display = "none"
+        }
+    </script>
+</body>
+</html>
