@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Function JavaScript</title>
+</head>
+<body>
+    <h1>Belajar Function JavaScript</h1>
+    
+    <script>
+        // // 1. Function Dasar
+        // function sapa() {
+        //     console.log("Halo dunia!");
+        // }
+        // sapa(); // Panggil function
+        
+        // 2. Function dengan Parameter
+        function tambah(a, b) {
+            return a + b;
+        }
+        console.log(tambah(5, 3)); // Output: 8
+        
+        // 3. Function dengan Default Parameter
+        function sapaNama(nama = "Teman") {
+            console.log("Halo, " + nama);
+        }
+        sapaNama("Haikal"); // Output: Halo, Haikal
+        sapaNama(); // Output: Halo, Teman
+        
+        // 4. Arrow Function
+        const kali = (x, y) => x * y;
+        console.log(kali(4, 5)); // Output: 20
+        
+        // 5. Function dengan Multiple Return
+        function hitung(a, b) {
+            return {
+                jumlah: a + b,
+                kurang: a - b,
+                kali: a * b
+            };
+        }
+        console.log(hitung(10, 2));
+    </script>
+</body>
+</html>

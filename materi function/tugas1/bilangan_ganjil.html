@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menampilkan bilangan ganjil 1 - 20</title>
+</head>
+<body>
+    <script>
+        function bilanganGanjil(hasil="") {
+            for (let i = 1; i <= 20; i++) {
+                if (i % 2 !== 0) {
+                    hasil += i + " ";
+                }
+            }
+            return hasil;
+        }
+        document.write("Bilangan Ganjil dari 1 sampai 20 adalah: <br>");
+        document.write(bilanganGanjil());
+    </script>
+</body>
+</html>
