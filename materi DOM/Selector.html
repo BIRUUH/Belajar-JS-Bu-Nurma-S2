@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+</head>
+<body>
+    <h1 id="judul">
+       Belajar Query Selector DOM
+    </h1>
+    <p class="text">Paragraf 1</p>
+    <p class="text">Paragraf 2</p>
+    <button>Klik Saya</button>
+    <script>
+        let judul = document.querySelector("#judul");
+        judul.style.color = "purple";
+        let text = document.querySelector(".text");
+        text.style.fontWeight = "bold";
+        let button = document.querySelector("button");
+        button.innerText = "Tombol di Klik";
+        let Paragraf2 = document.querySelectorAll(".text")[1];
+        Paragraf2.style.color = "gray";
+    </script>
+</body>
+</html>
