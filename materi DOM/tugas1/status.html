@@ -6,19 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-    <p id="status">STATUS AWAL</p>
-
-    <div id="data">
-        <p>Haikal</p>
-        <p>Rasya</p>
-        <p>Bisma</p>
-    </div>
-
     <button onclick="aktif()">Aktifkan</button>
     <button onclick="nonaktif()">Nonaktifkan</button>
+    <p id="status">STATUS</p>
 
-    <script>
-        
+    <div id="data">
+        <p>Nama: M. Haikal Pratama</p>
+        <p>Kelas: XI RPL 1</p>
+        <p>No. Absen: 17</p>
+    </div>
+
+
+    <script>        
         function aktif() {
             document.getElementById("status").innerHTML = "Status Aktif"
             document.getElementById("status").style.color = "green"
@@ -29,7 +28,6 @@
             document.getElementById("status").style.color = "red"
             document.getElementById("data").style.display = "none"
         }
-        aktif();
     </script>
 </body>
 </html>

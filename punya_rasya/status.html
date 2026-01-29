@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="awal">Status</h1>
+
+    <p id="Status">
+        Rasya <br>
+        Shila <br>
+        Rafi <br>
+    </p>
+    <button onclick="statusAktif()">Aktif</button>
+    <button onclick="nonAktif()">Nonaktif</button>
+
+    <script>
+        function statusAktif() {
+            document.getElementById("awal").innerHTML = "Status Aktif";
+            document.getElementById("awal").style.color = "green";
+            document.getElementById("Status").style.display = "block";
+        }
+        function nonAktif() {
+            document.getElementById("awal").innerHTML = "Status Nonaktif";
+            document.getElementById("awal").style.color = "red";
+            document.getElementById("Status").style.display = "none";
+        }
+        statusAktif();
+    </script>
+</body>
+</html>
