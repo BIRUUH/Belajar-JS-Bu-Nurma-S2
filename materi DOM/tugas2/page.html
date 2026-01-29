@@ -1,11 +1,79 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tugas Query Selector</title>
 </head>
+
 <body>
-    <p>
+
+    <h2>Contoh Manipulasi DOM dengan JavaScript</h2>
+
+    <p id="paragraf">
+        Ini adalah paragraf contoh untuk tugas JavaScript Basis Data.
+        Paragraf ini dapat ditampilkan dan disembunyikan menggunakan tombol.
+    </p>
+
+    <button id="tampil">Tampilkan</button>
+    <button id="sembunyi">Sembunyikan</button>
+
+    <script>
+        // Mengambil elemen menggunakan document.querySelector
+        const paragraf = document.querySelector("#paragraf");
+        const tampil = document.querySelector("#tampil");
+        const sembunyi = document.querySelector("#sembunyi");
+
+        // Event untuk menampilkan paragraf
+        tampil.addEventListener("click", function () {
+            paragraf.style.display = "block";
+        });
+
+        // Event untuk menyembunyikan paragraf
+        sembunyi.addEventListener("click", function () {
+            paragraf.style.display = "none";
+        });
+    </script>
+
 </body>
+
+</html> -->
+
+-------------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tampilkan & Sembunyikan Paragraf</title>
+</head>
+
+<body>
+
+    <h3>Contoh JavaScript Dasar</h3>
+
+    <p id="paragraf">
+        Ini adalah paragraf yang bisa ditampilkan dan disembunyikan.
+    </p>
+
+    <button onclick="tampilkan()">Tampilkan</button>
+    <button onclick="sembunyikan()">Sembunyikan</button>
+
+    <script>
+        // Mengambil paragraf
+        const paragraf = document.querySelector("#paragraf");
+
+        function tampilkan() {
+            paragraf.style.display = "block";
+        }
+
+        function sembunyikan() {
+            paragraf.style.display = "none";
+        }
+    </script>
+
+</body>
+
 </html>
